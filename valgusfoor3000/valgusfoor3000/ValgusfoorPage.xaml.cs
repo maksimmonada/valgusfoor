@@ -27,13 +27,13 @@ namespace valgusfoor3000
 			lbl = new Label()
 			{
 				Text = "Valgusfoor",
-				BackgroundColor = Color.Black,
-				TextColor = Color.White
+				BackgroundColor = Color.Blue,
+				TextColor = Color.Yellow
 			};
 
 			lbl1 = new Label()
 			{
-				Text = "Punane",
+				Text = "Red",
 				HorizontalOptions = LayoutOptions.Center,
 				VerticalOptions = LayoutOptions.Center
 			};
@@ -51,7 +51,7 @@ namespace valgusfoor3000
 
 			lbl2 = new Label()
 			{
-				Text = "Kollane",
+				Text = "Yellow",
 				HorizontalOptions = LayoutOptions.Center,
 				VerticalOptions = LayoutOptions.Center
 			};
@@ -69,7 +69,7 @@ namespace valgusfoor3000
 
 			lbl3 = new Label()
 			{
-				Text = "rohaline",
+				Text = "Green",
 				HorizontalOptions = LayoutOptions.Center,
 				VerticalOptions = LayoutOptions.Center
 			};
@@ -87,7 +87,7 @@ namespace valgusfoor3000
 
 			btn = new Button
 			{
-				Text = "Sisse",
+				Text = "In",
 				HorizontalOptions = LayoutOptions.Start,
 				VerticalOptions = LayoutOptions.Start
 			};
@@ -96,7 +96,7 @@ namespace valgusfoor3000
 
 			btn1 = new Button
 			{
-				Text = "Välja",
+				Text = "Out",
 				HorizontalOptions = LayoutOptions.End,
 				VerticalOptions = LayoutOptions.End
 			};
@@ -127,9 +127,9 @@ namespace valgusfoor3000
 			fr.BackgroundColor = Color.Gray;
 			fr2.BackgroundColor = Color.Gray;
 			fr3.BackgroundColor = Color.Gray;
-			lbl1.Text = "Punane";
-			lbl2.Text = "Kollane";
-			lbl3.Text = "rohaline";
+			lbl1.Text = "Red";
+			lbl2.Text = "Yellow";
+			lbl3.Text = "Green";
 		}
 		private async void Btn_Clicked(object sender, EventArgs e)
 		{
@@ -141,19 +141,19 @@ namespace valgusfoor3000
 				await Task.Delay(1000);
 				if (!bl) break;
 				fr.BackgroundColor = Color.Gray;
-				lbl1.Text = "Punane";
+				lbl1.Text = "Red";
 				fr2.BackgroundColor = Color.Yellow;
-				lbl2.Text = "OOTA!";
+				lbl2.Text = "Hold!";
 				await Task.Delay(1000);
 				if (!bl) break;
 				fr2.BackgroundColor = Color.Gray;
-				lbl2.Text = "Kollane";
+				lbl2.Text = "Yellow";
 				fr3.BackgroundColor = Color.Green;
-				lbl3.Text = "MINE!";
+				lbl3.Text = "GO!";
 				await Task.Delay(1000);
 				if (!bl) break;
 				fr3.BackgroundColor = Color.Gray;
-				lbl3.Text = "rohaline";
+				lbl3.Text = "Green";
 				fr.BackgroundColor = Color.Red;
 				lbl1.Text = "STOP!";
 			}

@@ -15,7 +15,7 @@ namespace valgusfoor3000
             var valgus_btn = new Button
             {
                 Text = "Valgusfoor",
-                BackgroundColor = Color.Khaki
+                BackgroundColor = Color.Blue
             };
 
             valgus_btn.Clicked += Valgus_btn_Clicked;
